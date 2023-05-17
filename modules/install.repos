@@ -35,8 +35,21 @@ repositories:
     type: git
     url: https://github.com/RobotnikAutomation/teleop_panel.git
     version: 350b052147b8fe7406ddbc656e2aea4c2ab67216
-#  src/ewellix_description:
-#    type: git
-#    url: https://github.com/RobotnikAutomation/ewellix_description.git
-#    version: d21c40e5fcbe86cdddbecbf320a92717fc895cdc
+  src/ewellix_description:
+    type: git
+    url: https://github.com/RobotnikAutomation/ewellix_description.git
+    version: d21c40e5fcbe86cdddbecbf320a92717fc895cdc
+  src/robot_localization:
+    type: git
+    url: https://github.com/RomanRobotnik/robot_localization.git
+  src/joint_read_command_controller:
+    type: git
+    url: https://github.com/RobotnikAutomation/joint_read_command_controller.git
+    version: melodic-devel
+  src/hector_gazebo:
+    type: git
+    url: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo
+    version: melodic-devel
+
+    
 
