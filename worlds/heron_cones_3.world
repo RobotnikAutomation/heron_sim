@@ -1,0 +1,2405 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <plugin name='ros_link_attaasflknnsalfsfnjalcher_plugin' filename='libgazebo_ros_link_attacher.so'/>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='heron_cones_use_case'>
+      <model name='Construction Cone'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>24.7483 1.96075 0 0 -0 0</pose>
+      </model>
+      <model name='Construction Cone_0'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>21.8619 1.00421 0 0 -0 0</pose>
+      </model>
+      <model name='Construction Cone_1'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>19.1484 0.333307 0 0 -0 0</pose>
+      </model>
+      <model name='Construction Cone_2'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>16.3463 0.316943 0 0 -0 0</pose>
+      </model>
+      <model name='Construction Cone_2_clone'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>11.0985 1.30328 0 0 -0 0</pose>
+      </model>
+      <model name='Construction Cone_2_clone_0'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>8.98705 2.14824 0 0 -0 0</pose>
+      </model>
+      <model name='Construction Cone_3'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <scale>10 10 10</scale>
+                <uri>model://construction_cone/meshes/construction_cone.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <inertial>
+            <pose>0 0 0 0 -0 0</pose>
+            <inertia>
+              <ixx>1</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>1</iyy>
+              <iyz>0</iyz>
+              <izz>1</izz>
+            </inertia>
+            <mass>1</mass>
+          </inertial>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>13.4289 0.274514 0 0 -0 0</pose>
+      </model>
+      <model name='cloverleaf_interchange'>
+        <static>1</static>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://cloverleaf_interchange/meshes/cloverleaf.obj</uri>
+                <scale>0.0254 0.0254 0.0254</scale>
+              </mesh>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://cloverleaf_interchange/meshes/cloverleaf.obj</uri>
+                <scale>0.0254 0.0254 0.0254</scale>
+              </mesh>
+            </geometry>
+          </visual>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>-115.619 -7.34125 0 0 -0 0</pose>
+      </model>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>-28.6042 -1.87986 0 0 -0 0</pose>
+    </model>
+    <model name='unit_box'>
+      <pose>6.24191 4.76772 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <state world_name='default'>
+      <sim_time>211 495000000</sim_time>
+      <real_time>89 432451906</real_time>
+      <wall_time>1683892625 872616606</wall_time>
+      <iterations>78468</iterations>
+      <model name='heron_cones_use_case'>
+        <pose>-28.6042 -1.87986 -2e-06 1e-06 -0 0</pose>
+        <scale>1 1 1</scale>
+        <model name='Construction Cone'>
+          <pose>-3.8559 0.08089 -0 1e-06 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-3.8559 0.08089 -0 1e-06 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>-0 -0 -0.981623 1.50071 -0.26659 0</acceleration>
+            <wrench>-0 -0 -0.981623 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='Construction Cone_0'>
+          <pose>-6.7423 -0.87565 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-6.7423 -0.87565 -1e-06 -1e-06 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 0 -9.8 0 -0 0</acceleration>
+            <wrench>0 0 -9.8 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='Construction Cone_1'>
+          <pose>-9.4558 -1.54655 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-9.4558 -1.54655 -0 0 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 0 -9.8 0 -0 0</acceleration>
+            <wrench>0 0 -9.8 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='Construction Cone_2'>
+          <pose>-12.2579 -1.56292 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-12.2579 -1.56292 -0 1e-06 -1e-06 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>-0 -1e-06 -1.57468 -1.3616 -1.45347 -3.14159</acceleration>
+            <wrench>-0 -1e-06 -1.57468 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='Construction Cone_2_clone'>
+          <pose>-17.5057 -0.57658 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-17.5057 -0.57658 -1e-06 -1e-06 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 0 -9.8 0 -0 0</acceleration>
+            <wrench>0 0 -9.8 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='Construction Cone_2_clone_0'>
+          <pose>-19.6171 0.26838 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-19.6171 0.26838 -1e-05 0 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 0 -9.8 0 -0 0</acceleration>
+            <wrench>0 0 -9.8 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='Construction Cone_3'>
+          <pose>-15.1753 -1.60535 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-15.1753 -1.60535 -0 0 2e-06 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 -0 -0.48974 -2.8194 1.16797 -3.14159</acceleration>
+            <wrench>0 -0 -0.48974 0 -0 0</wrench>
+          </link>
+        </model>
+        <model name='cloverleaf_interchange'>
+          <pose>-144.223 -9.22111 0 0 -0 0</pose>
+          <scale>1 1 1</scale>
+          <link name='link'>
+            <pose>-144.223 -9.22111 0 0 -0 0</pose>
+            <velocity>0 0 0 0 -0 0</velocity>
+            <acceleration>0 0 0 0 -0 0</acceleration>
+            <wrench>0 0 0 0 -0 0</wrench>
+          </link>
+        </model>
+      </model>
+      <model name='robot'>
+        <pose>0.213613 0.004813 -0.000118 -0.000204 0.000123 -0.000259</pose>
+        <scale>1 1 1</scale>
+        <link name='robot_arm_forearm_link'>
+          <pose>0.92307 0.437688 1.12413 1.57087 0.0021 -2.35798</pose>
+          <velocity>-0.002507 -0.001365 0.003693 0.024269 -0.033887 -0.009465</velocity>
+          <acceleration>-1.08313 -0.327639 0.929539 1.03744 0.806828 2.30577</acceleration>
+          <wrench>-4.1917 -1.26796 3.59732 0 -0 0</wrench>
+        </link>
+        <link name='robot_arm_shoulder_link'>
+          <pose>0.489055 0.005217 1.12281 7e-05 -0.00092 -2.35798</pose>
+          <velocity>-0.006369 0.002694 -0.022755 0.017484 -0.028561 -0.009415</velocity>
+          <acceleration>-1.59336 0.157998 -0.382335 -2.62586 -1.34121 2.3843</acceleration>
+          <wrench>-12.3932 1.22891 -2.9738 0 -0 0</wrench>
+        </link>
+        <link name='robot_arm_upper_arm_link'>
+          <pose>0.489055 0.005217 1.1228 1.57083 0.002189 -2.35798</pose>
+          <velocity>-0.006482 0.002729 -0.022314 0.022397 -0.036113 -0.00938</velocity>
+          <acceleration>-1.33579 0.087073 -0.076753 -3.00433 1.49862 -0.829097</acceleration>
+          <wrench>-17.2718 1.12586 -0.992422 0 -0 0</wrench>
+        </link>
+        <link name='robot_arm_wrist_1_link'>
+          <pose>1.20501 0.964475 1.12532 1.57087 0.002049 -2.35798</pose>
+          <velocity>0.002375 -0.004074 0.025976 0.022764 -0.035035 -0.009503</velocity>
+          <acceleration>-0.850943 -0.418175 1.22866 2.9365 -1.30794 2.26945</acceleration>
+          <wrench>-1.66785 -0.819623 2.40818 0 -0 0</wrench>
+        </link>
+        <link name='robot_arm_wrist_2_link'>
+          <pose>1.20519 0.964642 1.00547 -3.14152 0.002049 -2.35798</pose>
+          <velocity>0.006513 -0.001283 0.025929 0.022926 -0.034762 -0.009486</velocity>
+          <acceleration>-0.635091 -0.414194 1.22813 3.01282 -1.25562 2.35048</acceleration>
+          <wrench>-1.24478 -0.81182 2.40714 0 -0 0</wrench>
+        </link>
+        <link name='robot_arm_wrist_3_link'>
+          <pose>1.12293 1.0472 1.00546 1.57088 0.002048 -2.35798</pose>
+          <velocity>0.007308 -0.00049 0.025017 0.023671 -0.03404 -0.009373</velocity>
+          <acceleration>-0.581603 -0.36172 1.09859 2.74631 -1.5043 2.06236</acceleration>
+          <wrench>-0.117484 -0.073067 0.221914 0 -0 0</wrench>
+        </link>
+        <link name='robot_back_left_motor_wheel'>
+          <pose>-0.265797 0.297464 0.142382 -0.000256 0.000168 -0.00022</pose>
+          <velocity>0.002544 0.0004 -0.021311 -0.01455 0.01479 -0.001194</velocity>
+          <acceleration>0.478987 0.274873 0.539121 -0.780631 1.20428 -0.225955</acceleration>
+          <wrench>1.91595 1.09949 2.15648 0 -0 0</wrench>
+        </link>
+        <link name='robot_back_left_wheel'>
+          <pose>-0.265797 0.297463 0.142382 -0.003347 1.4704 -0.003545</pose>
+          <velocity>0.002627 0.000513 -0.021298 -0.0035 0.018375 -0.001886</velocity>
+          <acceleration>0.325732 0.175612 0.53707 2.34392 0.876147 2.88642</acceleration>
+          <wrench>1.30293 0.702449 2.14828 0 -0 0</wrench>
+        </link>
+        <link name='robot_back_right_motor_wheel'>
+          <pose>-0.265943 -0.28753 0.142499 -0.000161 8.8e-05 -0.000288</pose>
+          <velocity>0.001365 0.0001 -0.008659 -0.019989 0.022839 -0.001246</velocity>
+          <acceleration>0.367241 0.308191 0.893153 1.7073 1.29793 2.90789</acceleration>
+          <wrench>1.46896 1.23276 3.57261 0 -0 0</wrench>
+        </link>
+        <link name='robot_back_right_wheel'>
+          <pose>-0.265945 -0.287533 0.142499 -0.000148 -0.116337 -0.000269</pose>
+          <velocity>0.001811 0.000635 -0.008646 -0.004824 0.012916 -0.000622</velocity>
+          <acceleration>0.228338 0.21673 0.919522 1.60595 1.53437 2.83259</acceleration>
+          <wrench>0.913353 0.866921 3.67809 0 -0 0</wrench>
+        </link>
+        <link name='robot_base_footprint'>
+          <pose>0.213613 0.004813 -0.000118 -0.000204 0.000123 -0.000259</pose>
+          <velocity>-0.001314 -0.003456 -0.025543 -0.021273 0.021756 -0.001196</velocity>
+          <acceleration>0.586435 0.263847 0.245929 -0.553229 0.800973 -0.224704</acceleration>
+          <wrench>39.1275 17.6041 16.4086 0 -0 0</wrench>
+        </link>
+        <link name='robot_ewellix_lift_1_link'>
+          <pose>0.488701 0.004855 0.42911 -0.000602 0.000621 -0.000262</pose>
+          <velocity>0.006123 0.004723 -0.022844 0.013858 -0.045032 -0.00553</velocity>
+          <acceleration>0.156062 0.245892 -0.381971 -2.68558 0.995204 2.8357</acceleration>
+          <wrench>0.312124 0.491783 -0.763942 0 -0 0</wrench>
+        </link>
+        <link name='robot_ewellix_lift_2_link'>
+          <pose>0.488761 0.004891 0.43411 -0.000487 0.000437 -0.000266</pose>
+          <velocity>0.001858 0.003326 -0.022843 0.001824 -0.013034 -0.00635</velocity>
+          <acceleration>-1.07564 0.216672 -0.386641 0.201228 -1.54393 -0.340427</acceleration>
+          <wrench>-6.45383 1.30003 -2.31985 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_left_motor_wheel'>
+          <pose>0.693203 0.297216 0.142267 -0.00025 0.000167 -0.000223</pose>
+          <velocity>0.00257 -0.000502 -0.042571 -0.011943 0.014861 -0.001161</velocity>
+          <acceleration>0.486863 0.022885 -0.208112 -0.273274 1.23324 -0.228749</acceleration>
+          <wrench>1.94745 0.091541 -0.83245 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_left_wheel'>
+          <pose>0.693202 0.297215 0.142267 -0.003264 1.47156 -0.003466</pose>
+          <velocity>0.00265 -0.000375 -0.042671 0.002634 0.018552 -0.002058</velocity>
+          <acceleration>0.330083 -0.009214 -0.205003 -3.09007 0.843499 2.76784</acceleration>
+          <wrench>1.32033 -0.036854 -0.820011 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_right_motor_wheel'>
+          <pose>0.693058 -0.287776 0.142383 -0.000193 0.000117 -0.000252</pose>
+          <velocity>0.000473 -0.002244 -0.02973 -0.02349 0.023318 -0.001169</velocity>
+          <acceleration>0.350315 0.010554 0.098821 -0.58236 0.716851 -0.228752</acceleration>
+          <wrench>1.40126 0.042215 0.395284 0 -0 0</wrench>
+        </link>
+        <link name='robot_front_right_wheel'>
+          <pose>0.693053 -0.287784 0.142383 -0.003516 1.47917 -0.003748</pose>
+          <velocity>0.002025 -0.0005 -0.029556 0.003495 0.014339 -0.002027</velocity>
+          <acceleration>0.202626 -0.011187 0.094105 0.059803 1.41391 -0.387108</acceleration>
+          <wrench>0.810505 -0.044749 0.376418 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box'>
+        <pose>6.24191 4.76772 -158744 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>6.24191 4.76772 -158744 0 -0 0</pose>
+          <velocity>0 0 -1763.91 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>17.6106 -11.6958 15.1622 -0 0.639643 2.41219</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='robot'>
+      <link name='robot_base_footprint'>
+        <inertial>
+          <pose>0.095126 0.000976 0.524855 0 -0 0</pose>
+          <mass>66.721</mass>
+          <inertia>
+            <ixx>5.12358</ixx>
+            <ixy>0.0484276</ixy>
+            <ixz>0.79786</ixz>
+            <iyy>8.5878</iyy>
+            <iyz>-0.0255419</iyz>
+            <izz>7.38807</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_chassis_link_collision'>
+          <pose>0 0 0.37626 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_xl_chassis.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_battery_link_collision_1'>
+          <pose>0 0 0.37626 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_xl_battery.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_ewellix_lift_base_link_collision_2'>
+          <pose>0.275 0 0.66726 1.57 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/others/ewellix_description/meshes/ewellix_lift_base_500mm.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_front_3d_laser_base_link_collision_3'>
+          <pose>0.57918 0 0.61698 3.14159 1.57079 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/rs_bpearl.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_front_laser_base_link_collision_4'>
+          <pose>0.63 0 0.34826 3.14159 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/sick_tim551.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_front_rgbd_camera_link_collision_5'>
+          <pose>0.637 0 0.34626 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/orbbec_astra.dae</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_gps_base_link_collision_6'>
+          <pose>-0.472 0.40028 0.6667 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.4</length>
+              <radius>0.05</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_base_footprint_fixed_joint_lump__robot_imu_base_link_collision_7'>
+          <pose>0.3 -0.3 0.45326 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.036 0.037 0.009</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_base_footprint_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.001 0.001</size>
+            </box>
+          </geometry>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_chassis_link_visual_1'>
+          <pose>0 0 0.37626 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_xl_chassis.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_base_logos_link_visual_2'>
+          <pose>0 0 0.2325 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1.24 1.24 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_logos.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>0.50754 0.50754 0.50754 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_battery_link_visual_3'>
+          <pose>0 0 0.37626 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_xl_battery.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_contactors_link_visual_4'>
+          <pose>0.6405 0 0.4789 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_contactors.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.7 0.3 0 1</ambient>
+            <diffuse>0.7 0.3 0 1</diffuse>
+            <specular>0.7 0.3 0 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_ewellix_lift_base_link_visual_5'>
+          <pose>0.275 0 0.66226 1.57 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/others/ewellix_description/meshes/ewellix_lift_base_500mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_front_3d_laser_base_link_visual_6'>
+          <pose>0.57918 0 0.61698 3.14159 1.57079 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/rs_bpearl.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.250754 0.250754 0.250754 1</diffuse>
+            <specular>0.250827 0.250827 0.250827 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_front_laser_base_link_visual_7'>
+          <pose>0.63 0 0.34826 3.14159 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/sick_tim551.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_front_rgbd_camera_link_visual_8'>
+          <pose>0.637 0 0.34626 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/orbbec_astra.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_gps_base_link_visual_9'>
+          <pose>-0.472 0.40028 0.8167 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/structures/gps_mast.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_imu_base_link_visual_10'>
+          <pose>0.3 -0.3 0.44876 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/sensors/robotnik_sensors/meshes/vectornav_vn100.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='robot_base_footprint_fixed_joint_lump__robot_leds_link_visual_11'>
+          <pose>0 0 0.5025 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/bases/rbvogui_xl_leds.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+            <specular>0 1 0 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <sensor name='robot_front_3d_laser_sensor' type='ray'>
+          <visualize>0</visualize>
+          <update_rate>15</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>1200</samples>
+                <min_angle>-3.14159</min_angle>
+                <max_angle>3.14159</max_angle>
+                <resolution>1</resolution>
+              </horizontal>
+              <vertical>
+                <samples>32</samples>
+                <min_angle>-0.0872665</min_angle>
+                <max_angle>1.48353</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.1</min>
+              <max>90</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>none</type>
+            </noise>
+          </ray>
+          <plugin name='robot_front_3d_laser_controller' filename='libgazebo_ros_velodyne_laser.so'>
+            <topicName>front_3d_laser/points_3d</topicName>
+            <frameName>/robot_front_3d_laser_link</frameName>
+            <gaussianNoise>0.008</gaussianNoise>
+            <robotNamespace>/robot/</robotNamespace>
+          </plugin>
+          <pose>0.67345 0 0.61698 3.14159 1.57079 3.14159</pose>
+        </sensor>
+        <sensor name='robot_front_laser_sensor' type='ray'>
+          <visualize>0</visualize>
+          <update_rate>15</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>819</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.5708</min_angle>
+                <max_angle>1.5708</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.05</min>
+              <max>10</max>
+              <resolution>0.01745</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='robot_front_laser_controller' filename='libgazebo_ros_laser.so'>
+            <topicName>front_laser/scan</topicName>
+            <frameName>/robot_front_laser_link</frameName>
+            <robotNamespace>/robot/</robotNamespace>
+          </plugin>
+          <pose>0.63 -0 0.2858 3.14159 -0 0</pose>
+        </sensor>
+        <sensor name='robot_front_rgbd_camera_depth_sensor' type='depth'>
+          <always_on>1</always_on>
+          <update_rate>20</update_rate>
+          <camera>
+            <horizontal_fov>1.0472</horizontal_fov>
+            <image>
+              <format>R8G8B8</format>
+              <width>640</width>
+              <height>480</height>
+            </image>
+            <clip>
+              <near>0.05</near>
+              <far>3.5</far>
+            </clip>
+          </camera>
+          <plugin name='robot_front_rgbd_camera_controller' filename='libgazebo_ros_openni_kinect.so'>
+            <cameraName>front_rgbd_camera</cameraName>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>10</updateRate>
+            <imageTopicName>rgb/image_raw</imageTopicName>
+            <depthImageTopicName>depth/image_raw</depthImageTopicName>
+            <pointCloudTopicName>depth/points</pointCloudTopicName>
+            <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+            <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+            <frameName>/robot_front_rgbd_camera_depth_optical_frame</frameName>
+            <baseline>0.1</baseline>
+            <distortion_k1>0.0</distortion_k1>
+            <distortion_k2>0.0</distortion_k2>
+            <distortion_k3>0.0</distortion_k3>
+            <distortion_t1>0.0</distortion_t1>
+            <distortion_t2>0.0</distortion_t2>
+            <pointCloudCutoff>0.4</pointCloudCutoff>
+            <robotNamespace>/robot/</robotNamespace>
+          </plugin>
+          <pose>0.637 0 0.34626 0 -0 0</pose>
+        </sensor>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_back_left_motor_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>-0.4795 0.2925 0.1425 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_back_left_motor_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3</lower>
+            <upper>3</upper>
+            <effort>100</effort>
+            <velocity>2.83</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_back_left_motor_wheel'>
+        <pose relative_to='robot_back_left_motor_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.12 0 -0 0</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0335495</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0335495</iyy>
+            <iyz>0</iyz>
+            <izz>0.0507656</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_back_left_motor_wheel_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_back_left_motor_wheel_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>0.50754 0.50754 0.50754 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_back_left_wheel_joint' type='revolute'>
+        <pose relative_to='robot_back_left_motor_wheel'>0 0 0 0 -0 0</pose>
+        <parent>robot_back_left_motor_wheel</parent>
+        <child>robot_back_left_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1000</effort>
+            <velocity>2000</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_back_left_wheel'>
+        <pose relative_to='robot_back_left_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0268396</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0268396</iyy>
+            <iyz>0</iyz>
+            <izz>0.0406125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_back_left_wheel_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1425</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_back_left_wheel_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/wheel_285mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.250754 0.250754 0.250754 1</diffuse>
+            <specular>0.250827 0.250827 0.250827 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_back_right_motor_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>-0.4795 -0.2925 0.1425 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_back_right_motor_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3</lower>
+            <upper>3</upper>
+            <effort>100</effort>
+            <velocity>2.83</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_back_right_motor_wheel'>
+        <pose relative_to='robot_back_right_motor_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.12 0 -0 3.14159</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0335495</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0335495</iyy>
+            <iyz>0</iyz>
+            <izz>0.0507656</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_back_right_motor_wheel_collision'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_back_right_motor_wheel_visual'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>0.50754 0.50754 0.50754 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_back_right_wheel_joint' type='revolute'>
+        <pose relative_to='robot_back_right_motor_wheel'>0 0 0 0 -0 0</pose>
+        <parent>robot_back_right_motor_wheel</parent>
+        <child>robot_back_right_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1000</effort>
+            <velocity>2000</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_back_right_wheel'>
+        <pose relative_to='robot_back_right_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0268396</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0268396</iyy>
+            <iyz>0</iyz>
+            <izz>0.0406125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_back_right_wheel_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1425</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_back_right_wheel_visual'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/wheel_285mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.250754 0.250754 0.250754 1</diffuse>
+            <specular>0.250827 0.250827 0.250827 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_ewellix_lift_1_joint' type='prismatic'>
+        <pose relative_to='robot_base_footprint'>0.275 0 0.42926 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_ewellix_lift_1_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>0.275</upper>
+            <effort>1000</effort>
+            <velocity>0.088</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_ewellix_lift_1_link'>
+        <pose relative_to='robot_ewellix_lift_1_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>2</mass>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_ewellix_lift_1_link_collision'>
+          <pose>-0.005 0 0.00235 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/others/ewellix_description/meshes/ewellix_lift_joint_1_500mm.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_ewellix_lift_1_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/others/ewellix_description/meshes/ewellix_lift_joint_1_500mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_ewellix_lift_2_joint' type='prismatic'>
+        <pose relative_to='robot_ewellix_lift_1_link'>0 0 0.005 0 -0 0</pose>
+        <parent>robot_ewellix_lift_1_link</parent>
+        <child>robot_ewellix_lift_2_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>0.225</upper>
+            <effort>1000</effort>
+            <velocity>0.088</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_ewellix_lift_2_link'>
+        <pose relative_to='robot_ewellix_lift_2_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.338667 0 -0 0</pose>
+          <mass>6</mass>
+          <inertia>
+            <ixx>0.370192</ixx>
+            <ixy>4.33681e-19</ixy>
+            <ixz>0</ixz>
+            <iyy>0.370192</iyy>
+            <iyz>0</iyz>
+            <izz>0.03125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_ewellix_lift_2_link_collision'>
+          <pose>-0.005 0 0.00235 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/others/ewellix_description/meshes/ewellix_lift_joint_2_500mm.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='robot_ewellix_lift_2_link_fixed_joint_lump__robot_arm_base_link_inertia_collision_1'>
+          <pose>0 0 0.508 0 -0 0.785398</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/base.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_ewellix_lift_2_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/others/ewellix_description/meshes/ewellix_lift_joint_2_500mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='robot_ewellix_lift_2_link_fixed_joint_lump__robot_arm_base_link_inertia_visual_1'>
+          <pose>0 0 0.508 0 -0 0.785398</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/base.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_arm_shoulder_pan_joint' type='revolute'>
+        <pose relative_to='robot_ewellix_lift_2_link'>0 0 0.6887 0 0 -2.35619</pose>
+        <parent>robot_ewellix_lift_2_link</parent>
+        <child>robot_arm_shoulder_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.28319</lower>
+            <upper>6.28319</upper>
+            <effort>330</effort>
+            <velocity>2.0944</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_arm_shoulder_link'>
+        <pose relative_to='robot_arm_shoulder_pan_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>7.778</mass>
+          <inertia>
+            <ixx>0.0314743</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0314743</iyy>
+            <iyz>0</iyz>
+            <izz>0.0218756</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_arm_shoulder_link_collision'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/shoulder.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_arm_shoulder_link_visual'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/shoulder.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_arm_shoulder_lift_joint' type='revolute'>
+        <pose relative_to='robot_arm_shoulder_link'>0 0 0 1.5708 -0 0</pose>
+        <parent>robot_arm_shoulder_link</parent>
+        <child>robot_arm_upper_arm_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.28319</lower>
+            <upper>6.28319</upper>
+            <effort>330</effort>
+            <velocity>2.0944</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_arm_upper_arm_link'>
+        <pose relative_to='robot_arm_shoulder_lift_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.306 0 0.175 3.14159 1.57079 3.14159</pose>
+          <mass>12.93</mass>
+          <inertia>
+            <ixx>0.421754</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.421754</iyy>
+            <iyz>0</iyz>
+            <izz>0.0363656</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_arm_upper_arm_link_collision'>
+          <pose>0 0 0.1762 1.5708 0 -1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/upperarm.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_arm_upper_arm_link_visual'>
+          <pose>0 0 0.1762 1.5708 0 -1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/upperarm.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_arm_elbow_joint' type='revolute'>
+        <pose relative_to='robot_arm_upper_arm_link'>-0.6127 0 0 0 -0 0</pose>
+        <parent>robot_arm_upper_arm_link</parent>
+        <child>robot_arm_forearm_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3.14159</lower>
+            <upper>3.14159</upper>
+            <effort>150</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_arm_forearm_link'>
+        <pose relative_to='robot_arm_elbow_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.285775 0 0.0393 3.14159 1.57079 3.14159</pose>
+          <mass>3.87</mass>
+          <inertia>
+            <ixx>0.110793</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.110793</iyy>
+            <iyz>0</iyz>
+            <izz>0.0108844</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_arm_forearm_link_collision'>
+          <pose>0 0 0.0393 1.5708 0 -1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/forearm.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_arm_forearm_link_visual'>
+          <pose>0 0 0.0393 1.5708 0 -1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/forearm.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_arm_wrist_1_joint' type='revolute'>
+        <pose relative_to='robot_arm_forearm_link'>-0.57155 0 0.17415 0 -0 0</pose>
+        <parent>robot_arm_forearm_link</parent>
+        <child>robot_arm_wrist_1_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.28319</lower>
+            <upper>6.28319</upper>
+            <effort>56</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_arm_wrist_1_link'>
+        <pose relative_to='robot_arm_wrist_1_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1.96</mass>
+          <inertia>
+            <ixx>0.00510825</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00510825</iyy>
+            <iyz>0</iyz>
+            <izz>0.0055125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_arm_wrist_1_link_collision'>
+          <pose>0 0 -0.135 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/wrist1.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_arm_wrist_1_link_visual'>
+          <pose>0 0 -0.135 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/wrist1.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_arm_wrist_2_joint' type='revolute'>
+        <pose relative_to='robot_arm_wrist_1_link'>0 -0.11985 -0 1.5708 -0 0</pose>
+        <parent>robot_arm_wrist_1_link</parent>
+        <child>robot_arm_wrist_2_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.28319</lower>
+            <upper>6.28319</upper>
+            <effort>56</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_arm_wrist_2_link'>
+        <pose relative_to='robot_arm_wrist_2_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1.96</mass>
+          <inertia>
+            <ixx>0.00510825</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00510825</iyy>
+            <iyz>0</iyz>
+            <izz>0.0055125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_arm_wrist_2_link_collision'>
+          <pose>0 0 -0.12 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/wrist2.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_arm_wrist_2_link_visual'>
+          <pose>0 0 -0.12 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/wrist2.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_arm_wrist_3_joint' type='revolute'>
+        <pose relative_to='robot_arm_wrist_2_link'>0 0.11655 -0 -1.5708 0 0</pose>
+        <parent>robot_arm_wrist_2_link</parent>
+        <child>robot_arm_wrist_3_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-6.28319</lower>
+            <upper>6.28319</upper>
+            <effort>56</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_arm_wrist_3_link'>
+        <pose relative_to='robot_arm_wrist_3_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 -0.025 0 -0 0</pose>
+          <mass>0.202</mass>
+          <inertia>
+            <ixx>0.000144346</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000144346</iyy>
+            <iyz>0</iyz>
+            <izz>0.000204525</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_arm_wrist_3_link_collision'>
+          <pose>0 0 -0.1168 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/collision/wrist3.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='robot_arm_wrist_3_link_visual'>
+          <pose>0 0 -0.1168 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/manipulation/universal_robot/ur_description/meshes/ur10e/visual/wrist3.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_front_left_motor_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>0.4795 0.2925 0.1425 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_front_left_motor_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3</lower>
+            <upper>3</upper>
+            <effort>100</effort>
+            <velocity>2.83</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_left_motor_wheel'>
+        <pose relative_to='robot_front_left_motor_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.12 0 -0 0</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0335495</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0335495</iyy>
+            <iyz>0</iyz>
+            <izz>0.0507656</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_left_motor_wheel_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_left_motor_wheel_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>0.50754 0.50754 0.50754 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_front_left_wheel_joint' type='revolute'>
+        <pose relative_to='robot_front_left_motor_wheel'>0 0 0 0 -0 0</pose>
+        <parent>robot_front_left_motor_wheel</parent>
+        <child>robot_front_left_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1000</effort>
+            <velocity>2000</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_left_wheel'>
+        <pose relative_to='robot_front_left_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0268396</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0268396</iyy>
+            <iyz>0</iyz>
+            <izz>0.0406125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_left_wheel_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1425</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_left_wheel_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/wheel_285mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.250754 0.250754 0.250754 1</diffuse>
+            <specular>0.250827 0.250827 0.250827 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_front_right_motor_wheel_joint' type='revolute'>
+        <pose relative_to='robot_base_footprint'>0.4795 -0.2925 0.1425 0 -0 0</pose>
+        <parent>robot_base_footprint</parent>
+        <child>robot_front_right_motor_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3</lower>
+            <upper>3</upper>
+            <effort>100</effort>
+            <velocity>2.83</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_right_motor_wheel'>
+        <pose relative_to='robot_front_right_motor_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.12 0 -0 3.14159</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0335495</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0335495</iyy>
+            <iyz>0</iyz>
+            <izz>0.0507656</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_right_motor_wheel_collision'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_right_motor_wheel_visual'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/hub_rbvogui_xl.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>0.50754 0.50754 0.50754 1</diffuse>
+            <specular>0.508273 0.508273 0.508273 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='robot_front_right_wheel_joint' type='revolute'>
+        <pose relative_to='robot_front_right_motor_wheel'>0 0 0 0 -0 0</pose>
+        <parent>robot_front_right_motor_wheel</parent>
+        <child>robot_front_right_wheel</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1000</effort>
+            <velocity>2000</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='robot_front_right_wheel'>
+        <pose relative_to='robot_front_right_wheel_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>4</mass>
+          <inertia>
+            <ixx>0.0268396</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0268396</iyy>
+            <iyz>0</iyz>
+            <izz>0.0406125</izz>
+          </inertia>
+        </inertial>
+        <collision name='robot_front_right_wheel_collision'>
+          <pose>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.1425</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+07</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='robot_front_right_wheel_visual'>
+          <pose>0 0 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/raquel/ws/HERON/src/heron_packages/robot/rbvogui_common/rbvogui_description/meshes/wheels/wheel_285mm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.250754 0.250754 0.250754 1</diffuse>
+            <specular>0.250827 0.250827 0.250827 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='ros_control' filename='libgazebo_ros_control.so'>
+        <robotParam>robot_description</robotParam>
+        <controlPeriod>0.001</controlPeriod>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        <legacyModeNS>1</legacyModeNS>
+        <robotNamespace>/robot/</robotNamespace>
+      </plugin>
+      <plugin name='robot_imu_controller' filename='libhector_gazebo_ros_imu.so'>
+        <alwaysOn>1</alwaysOn>
+        <topicName>imu/data</topicName>
+        <serviceName>robot_imuimu/service</serviceName>
+        <frameId>robot_imu_link</frameId>
+        <updateRate>50.0</updateRate>
+        <gaussianNoise>0.00</gaussianNoise>
+        <yawOffset>0.0</yawOffset>
+        <yawDrift>0.0</yawDrift>
+        <yawGaussianNoise>0.0</yawGaussianNoise>
+        <rateOffset>0.0 0.0 0.0</rateOffset>
+        <rateDrift>0.0 0.0 0.0</rateDrift>
+        <rateGaussianNoise>0.0 0.0 0.0</rateGaussianNoise>
+        <accelOffset>0.0 0.0 0.0</accelOffset>
+        <accelDrift>0.0 0.0 0.0</accelDrift>
+        <accelGaussianNoise>0.0 0.0 0.0</accelGaussianNoise>
+        <robotNamespace>/robot/</robotNamespace>
+        <bodyName>robot_base_footprint</bodyName>
+        <xyzOffset>0.30671 -0.2953 0.45466</xyzOffset>
+        <rpyOffset>0 -0 0</rpyOffset>
+        <ignition::corrected_offsets>1</ignition::corrected_offsets>
+      </plugin>
+      <static>0</static>
+      <plugin name='robot_gps_controller' filename='libhector_gazebo_ros_gps.so'>
+        <alwaysOn>1</alwaysOn>
+        <updateRate>5</updateRate>
+        <frameId>robot_gps_base_link</frameId>
+        <topicName>gps/fix</topicName>
+        <referenceLatitude>39.5080331</referenceLatitude>
+        <referenceLongitude>-0.4619816</referenceLongitude>
+        <referenceHeading>90</referenceHeading>
+        <velocityTopicName>gps/fix_velocity</velocityTopicName>
+        <drift>0.0 0.0 0.0</drift>
+        <gaussianNoise>0.00001 0.00001 0.00001</gaussianNoise>
+        <velocityDrift>0.00001 0.00001 0.00001</velocityDrift>
+        <velocityGaussianNoise>0.00001 0.00001 0.00001</velocityGaussianNoise>
+        <robotNamespace>/robot/</robotNamespace>
+        <bodyName>robot_base_footprint</bodyName>
+        <xyzOffset>-0.472 0.40028 0.8167</xyzOffset>
+        <rpyOffset>0 -0 0</rpyOffset>
+        <ignition::corrected_offsets>1</ignition::corrected_offsets>
+      </plugin>
+      <pose>0 0 0 0 -0 0</pose>
+    </model>
+  </world>
+</sdf>

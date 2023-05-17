@@ -1,0 +1,56 @@
+
+<launch>
+
+    <!-- Pose of the object -->
+    <arg name="object_x" default="-0.2025"/>
+    <arg name="object_y" default="0.0"/>
+    <arg name="object_z" default="0.62"/> <!-- 0.382125 -->
+    <arg name="object_orientation_x" default="0.0"/>
+    <arg name="object_orientation_y" default="0.0"/>
+    <arg name="object_orientation_z" default="3.14159"/>
+
+
+    <arg name="object_prefix" default="cone_"/>
+    <arg name="object_tag_id" default="marker7_6cm"/>    
+
+    <!-- Convert xacro and put on parameter server -->
+    <arg name="object_urdf_file" default="$(find xacro)/xacro '$(find heron_manipulation_description)/urdf/objects/cone.urdf.xacro' 
+    prefix:=$(arg object_prefix) tag_id:=$(arg object_tag_id) --inorder" />
+
+    <param name="object_description" command="$(arg object_urdf_file)" />
+
+
+    <!-- Spawn a robot into Gazebo -->
+    <node name="spawn_object" pkg="gazebo_ros" type="spawn_model" args="-param object_description -urdf -model box_center -reference_frame robot_base_footprint -x $(arg center_x) -y $(arg center_y) -z $(arg center_z) -Y $(arg yaw)" />
+
+
+    <!-- Convert xacro and put on parameter server -->
+    <arg name="right_box_urdf_file" default="$(find xacro)/xacro '$(find component_sorting_description)/urdf/box/box.urdf.xacro' 
+    prefix:=$(arg right_prefix) tag_id:=$(arg right_tag_id) --inorder" />
+
+    <param name="right_box_description" command="$(arg right_box_urdf_file)" />
+
+
+    <!-- Spawn a robot into Gazebo -->
+<!--     <node name="spawn_right_box" pkg="gazebo_ros" type="spawn_model" args="-param right_box_description -urdf -model box_right -reference_frame robot_base_footprint -x $(arg right_x) -y $(arg right_y) -z $(arg right_z) -Y $(arg yaw)" />
+ -->
+
+
+    <!-- Convert xacro and put on parameter server -->
+    <arg name="left_box_urdf_file" default="$(find xacro)/xacro '$(find component_sorting_description)/urdf/box/box.urdf.xacro' 
+    prefix:=$(arg left_prefix) tag_id:=$(arg left_tag_id) --inorder" />
+
+    <param name="left_box_description" command="$(arg left_box_urdf_file)" />
+
+
+    <!-- Spawn a robot into Gazebo -->
+    <node name="spawn_left_box" pkg="gazebo_ros" type="spawn_model" args="-param left_box_description -urdf -model box_left -reference_frame robot_base_footprint -x $(arg left_x) -y $(arg left_y) -z $(arg left_z) -Y $(arg yaw)" />
+
+
+<!--     <node name="table_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+	  <remap from="robot_description" to="table_description"/>
+    </node> -->
+
+
+
+</launch>

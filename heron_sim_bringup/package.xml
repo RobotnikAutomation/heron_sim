@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>heron_sim_bringup</name>
+  <version>0.0.0</version>
+  <description>The heron_sim_bringup package. The ros package contains all the needed files to run the simulation of the use cases of Heron - H2020 project</description>
+
+  <maintainer email="rjulia@robotnik.es">Raquel</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>rbvogui_control</exec_depend>
+  <exec_depend>rbvogui_description</exec_depend>
+  <exec_depend>rbvogui_pad</exec_depend>
+
+</package>
