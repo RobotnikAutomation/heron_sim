@@ -23,7 +23,7 @@ repositories:
     type: git
     url: https://github.com/RobotnikAutomation/robotnik_msgs
     version: 5cc6d5e435798f43e26a2e1f68877120c564d669
-    src/robotnik_sensors:
+  src/robotnik_sensors:
     type: git
     url: https://github.com/RobotnikAutomation/robotnik_sensors
     version: 8463f2db884e0d6769ec79475b3a28764318be52
@@ -52,17 +52,13 @@ repositories:
     version: melodic-devel
   src/hector_gazebo:
     type: git
-    url: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo
+    url: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
     version: melodic-devel
   src/eband_local_planner:
     type: git
-    url: https://github.com/utexas-bwi/eband_local_planner
+    url: https://github.com/utexas-bwi/eband_local_planner.git
     version: master
   src/perception_pcl:
     type: git
-    url: https://github.com/ros-perception/perception_pcl
+    url: https://github.com/ros-perception/perception_pcl.git
     version: melodic-devel
-  
-
-    
-
