@@ -3,10 +3,14 @@ repositories:
     type: git
     url: https://github.com/RobotnikAutomation/robotnik_pad
     version: 2e4481bf19bb17d5354abd04c45c95e3feef0e69
-  #src/heron_sim:
-  #  type: git
-  #  url: https://github.com/RobotnikAutomation/heron_sim
-  #  version: 3062b9fa259119f55e890fbc55aaed51b8878152  
+  src/heron_sim:
+    type: git
+    url: https://github.com/RobotnikAutomation/heron_sim
+    version: 3062b9fa259119f55e890fbc55aaed51b8878152
+  src/heron_common:
+    type: git
+    url: https://github.com/RobotnikAutomation/heron_common
+    version: main
   src/rbvogui_common:
     type: git
     url: https://github.com/RobotnikAutomation/rbvogui_common
