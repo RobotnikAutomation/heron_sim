@@ -41,8 +41,8 @@ repositories:
     version: 350b052147b8fe7406ddbc656e2aea4c2ab67216
   src/ewellix_description:
     type: git
-    url: https://github.com/RobotnikAutomation/ewellix_description.git
-    version: d21c40e5fcbe86cdddbecbf320a92717fc895cdc
+    url: https://github.com/rjuliaros/ewellix_description.git
+    version: heron-mimim-joint-tests
   src/robot_localization:
     type: git
     url: https://github.com/RomanRobotnik/robot_localization.git
