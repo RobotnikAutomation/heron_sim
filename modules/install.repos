@@ -50,6 +50,15 @@ repositories:
     type: git
     url: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo
     version: melodic-devel
+  src/eband_local_planner
+    type: git
+    url: https://github.com/utexas-bwi/eband_local_planner
+    version: master
+  src/perception_pcl
+    type: git
+    url: https://github.com/ros-perception/perception_pcl
+    version: melodic-devel
+  
 
     
 
