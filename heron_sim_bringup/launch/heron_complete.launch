@@ -4,7 +4,7 @@
   <!-- What simulator config package to use -->
   <arg name="simulation_package" default="$(optenv SIMULATION_CONFIG_PACKAGE rbvogui_gazebo)"/>
   <arg name="config_package" default="$(optenv CONFIG_PACKAGE rbvogui_gazebo)"/>
-  <arg name="sim_bringup_package" default="$(optenv SIM_BRINGUP_PACKAGE rbvogui_sim_bringup)"/>
+  <arg name="sim_bringup_package" default="$(optenv SIM_BRINGUP_PACKAGE heron_sim_bringup)"/>
   <arg name="world_package" default="$(optenv WORLD_PACKAGE heron_gazebo)"/>
   <arg name="rviz_package" default="$(optenv RVIZ_PACKAGE heron_gazebo)"/>
   <arg name="pad_package" default="$(optenv PAD_PACKAGE robotnik_pad)"/>
@@ -31,7 +31,7 @@
   <arg name="robot_id" default="$(optenv ROBOT_ID robot)"/>
   <arg name="prefix" default="$(arg robot_id)_"/>
   <arg name="robot_model" default="$(optenv ROBOT_MODEL rbvogui_xl)"/>
-  <arg name="robot_xacro" default="$(optenv ROBOT_XACRO rbvogui_xl_ur10e.urdf.xacro)"/>
+  <arg name="robot_xacro" default="$(optenv ROBOT_XACRO heron.urdf.xacro)"/>
   <arg name="robot_use_custom_xacro_path" default="$(optenv ROBOT_USE_CUSTOM_XACRO_PATH false)"/>
   <arg name="robot_custom_xacro_path" default="$(optenv ROBOT_CUSTOM_XACRO_PATH /home/robot/)"/>
   <arg name="kinematics" default="$(optenv ROBOT_KINEMATICS omni)"/>
@@ -121,7 +121,13 @@
     <arg name="config_package" value="$(arg rviz_package)"/>
   </include>
 
-  <!-- Run localization algortihm - EKF -->
-  <!--include file="$(find rbvogui_localization)/launch/robot_localization_world.launch"/-->
+  <!-- Run localization -->
+  <include file="$(find heron_localization)/launch/localization_complete.launch">
+    <arg name="robot_id" value="$(arg robot_id)" />
+  </include>
 
+  <!-- Run navigation -->
+  <include file="$(find heron_navigation)/launch/navigation_complete.launch">
+    <arg name="robot_id" value="$(arg robot_id)" />>
+  </include>
 </launch>
