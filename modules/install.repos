@@ -6,7 +6,7 @@ repositories:
   src/heron_sim:
     type: git
     url: https://github.com/RobotnikAutomation/heron_sim
-    version: 3062b9fa259119f55e890fbc55aaed51b8878152
+    version: main
   src/heron_common:
     type: git
     url: https://github.com/RobotnikAutomation/heron_common
@@ -42,14 +42,14 @@ repositories:
   src/ewellix_description:
     type: git
     url: https://github.com/rjuliaros/ewellix_description.git
-    version: heron-mimim-joint-tests
+    version: heron-mimic-joint-tests
   src/robot_localization:
     type: git
     url: https://github.com/RomanRobotnik/robot_localization.git
   src/joint_read_command_controller:
     type: git
     url: https://github.com/RobotnikAutomation/joint_read_command_controller.git
-    version: melodic-devel
+    version: master
   src/hector_gazebo:
     type: git
     url: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
