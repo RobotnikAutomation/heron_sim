@@ -2,9 +2,9 @@
 
 Packages for the simulation of the HERON project
 
-<!--p align="center">
-  <img src="doc/rbvogui_xl_base.png" height="275" />
-</p-->
+<p align="center">
+  <img src="doc/heron_environment_robot.jpg" height="275" />
+</p>
 
 ## Packages
 
@@ -64,7 +64,7 @@ Install one of these versions. Keep in mind that on the stable version the lates
 **Install stable version:**
 
 ```bash
-vcs import --input https://raw.githubusercontent.com/RobotnikAutomation/heron_sim/noetic-main/repos/install.repos
+vcs import --input https://raw.githubusercontent.com/RobotnikAutomation/heron_sim/main/repos/install.repos
 rosdep install --from-paths src --ignore-src -y -r
 ``` 
 
@@ -88,25 +88,30 @@ source devel/setup.bash
 
 These are the different configurations available depending on the use case:
 
-- CONES
-- ROADMARKS (TODO)
+- CONES (TODO)
+- ROADMARKS 
 - RUPS (TODO)
 - CRACKS (TODO)
 - POTHOLES (TODO)
 
+The instruction to run the simulation and spawn the robot are included below depending on the use case. The simulation will start paused for all the cases, it is because of a race condition between the robot controllers and setting a first joint configuration of the arm. Once the gazebo environment and the robot appeared, click the resume button of the Gazebo GUI.
 ### 5.1 CONES
-
-Set your robot kinematics to omni/ackermann (In case of ackermann, you will need twist2ackermann node enabled)
-  
+<!--  
 ```bash
-roslaunch heron_sim_bringup heron_complete.launch
-```
+roslaunch heron_sim_bringup heron_complete.launch use_case:=cones paused:=
+``` -->
 <!--p align="center">
   <img src="doc/rbvogui_cones.png" height="275" />
 </p-->
 
 ### 5.2 ROADMARKS
-
+  
+```bash
+roslaunch heron_sim_bringup heron_complete.launch use_case:=roadmarks
+```
+<p align="center">
+  <img src="doc/roadmarks.jpg" height="275" />
+</p>
 
 ### 5.3 RUPS
 
