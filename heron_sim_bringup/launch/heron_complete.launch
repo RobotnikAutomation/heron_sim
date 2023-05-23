@@ -42,7 +42,7 @@
   <arg name="z_init_pose" default="$(optenv ROBOT_SIM_GAZEBO_INIT_POSE_Z 0)"/>
   <arg name="a_init_pose" default="$(optenv ROBOT_SIM_GAZEBO_INIT_POSE_A 0)"/>
   <arg name="launch_base_hw_sim" default="$(optenv ROBOT_SIM_BASE_HW false)"/>
-  <arg name="use_case" default="(optenv ROBOT_USE_CASE_TOOLS roadmarks)"/>
+  <arg name="use_case" default="$(optenv ROBOT_USE_CASE_TOOLS roadmarks)"/>
 
   <!-- Localization configuration -->
   <arg name="map_file" default="demo/demo.yaml"/>
@@ -112,6 +112,7 @@
     <arg name="launch_pad" value="$(arg launch_pad)"/>
     <arg name="pad_config_file" value="$(arg pad_config_file)"/>
     <arg name="pad_config_path" value="$(arg pad_config_path)"/>
+    <arg name="use_case" value="$(arg use_case)"/>
   </include>
 
   <!-- launch rviz -->
