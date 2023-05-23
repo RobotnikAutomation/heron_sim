@@ -2,8 +2,8 @@
 <launch>
 
   <!-- What simulator to use -->
-  <arg name="simulation_package" default="$(optenv SIMULATION_CONFIG_PACKAGE rbvogui_gazebo)"/>
-  <arg name="config_package" default="$(optenv CONFIG_PACKAGE rbvogui_gazebo)"/>
+  <arg name="simulation_package" default="$(optenv SIMULATION_CONFIG_PACKAGE heron_gazebo)"/>
+  <arg name="config_package" default="$(optenv CONFIG_PACKAGE heron_gazebo)"/>
   <arg name="pad_package" default="$(optenv PAD_PACKAGE robotnik_pad)"/>
   <arg name="sim" default="$(optenv SIM_CONTROLLER true)"/>
 
@@ -46,7 +46,7 @@
   <!-- Launch robot (simulation specific software) -->
   <group ns="$(arg robot_id)">
     <!-- spawn robot in simulator -->
-    <include file="$(eval find(simulation_package) + '/launch/spawn_robot.launch')">
+    <include file="$(find heron_gazebo)/launch/spawn_robot.launch">
       <arg name="robot_id" value="$(arg robot_id)"/>
       <arg name="x_init_pose" value="$(arg x_init_pose)"/> 
       <arg name="y_init_pose" value="$(arg y_init_pose)"/>
