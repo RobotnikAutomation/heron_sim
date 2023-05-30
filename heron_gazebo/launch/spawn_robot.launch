@@ -20,9 +20,10 @@
          robot_arm_wrist_2_joint 0
          robot_arm_wrist_3_joint 0" />
       args="-x $(arg x_init_pose) -y $(arg y_init_pose) -z $(arg z_init_pose) -Y $(arg a_init_pose) 
-            -J robot_arm_elbow_joint 2.450 
-            -J robot_arm_shoulder_lift_joint -3.267 
-            -J robot_arm_shoulder_pan_joint -2.136 
+            -J robot_arm_elbow_joint 2.701770 
+            -J robot_arm_shoulder_lift_joint -2.136283
+            -J robot_arm_wrist_1_joint 2.638938
+            -J robot_arm_wrist_2_joint -1.507964
             -urdf -param robot_description -model $(arg robot_id)" />
 
 </launch>
