@@ -64,7 +64,7 @@ Install one of these versions. Keep in mind that on the stable version the lates
 **Install stable version:**
 
 ```bash
-vcs import --input https://raw.githubusercontent.com/RobotnikAutomation/heron_sim/main/repos/install.repos
+vcs import --input https://raw.githubusercontent.com/RobotnikAutomation/heron_sim/main/modules/install.repos
 rosdep install --from-paths src --ignore-src -y -r
 ``` 
 
