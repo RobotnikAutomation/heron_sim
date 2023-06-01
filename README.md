@@ -113,6 +113,12 @@ roslaunch heron_sim_bringup heron_complete.launch use_case:=roadmarks
   <img src="doc/roadmarks.jpg" height="275" />
 </p>
 
+On top of that, arm trajectories can be computed using MoveIt, to run it:
+
+```bash
+ROS_NAMESPACE=robot roslaunch heron_roadmarks_moveit heron_roadmarks_moveit_config.launch 
+```
+***TODO***: Finally, there is a database where the constraints are stored. The manipulation application (not included in this repository yet) interfaces with MoveIt and the database. 
 ### 5.3 RUPS
 
 
