@@ -68,8 +68,5 @@ repositories:
     version: master
   src/gazebo_ros_link_attacher:
     type: git
-    url: https://github.com/pal-robotics/gazebo_ros_link_attacher
-    version: melodic-devel
-    type:git
     url: https://github.com/pal-robotics/gazebo_ros_link_attacher.git
     version: melodic-devel
